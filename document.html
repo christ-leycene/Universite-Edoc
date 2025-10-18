@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITERITEKA University</title>
+    <link rel="stylesheet" href="style_doc.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- #region 
+    <marquee behavior="" direction="">
+        <h1>
+            Axel
+        </h1>
+    </marquee>
+    -->
+    <div class="site">
+        <aside>
+            <div class="page">
+                <img src="graduation-cap.svg" alt="logo">
+                <div class="nom_site">E-DOC ENSAT</div>
+                <img src="angle-left.svg" alt="sous-logo">
+            </div>
+
+            <nav>
+                <div class="bloc_nav">
+                    <img src="home (1).svg" alt="Tableau de bord">
+                    <a href="index.html">Tableau de bord</a>
+                </div>
+                <div class="bloc_nav">
+                    <img src="home (1).svg" alt="Documents">
+                    <a href="document.html">Documents</a>
+                </div>
+                <div class="bloc_nav notes_res">
+                    <img src="envelope.svg" alt="Notes et résultats">
+                    <a href="#">Notes et résultats</a>
+                    <img src="angle-left.svg" alt="deplier" class="img_deplier">
+                </div>
+                <div class="bloc_nav">
+                    <img src="calendar-lines (1).svg" alt="Emploi du temps">
+                    <a href="horaire.html">Emploi du temps</a>
+                </div>
+            </nav>
+        </aside>
+        <div class="overlay"></div>
+        <main>
+            <header>
+                <div class="entete">
+                    <button class="menu-btn" aria-label="Ouvrir le menu">☰</button>
+                    <div class="compte">
+                        <img src="user.svg" alt="photo_profil">
+                        <div class="nom">ITERITEKA AXEL</div>
+                    </div>
+                    <div class="langues">
+                        <a href="#" class="active"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </header>
+
+            <article>
+                <label for="titre">DEMANDE DE DOCUMENTS</label>
+                <hr>
+
+                <form method="post">
+                    <div class="doc">
+                        <div class="item">
+                            <label for="Attestation" class="opac">Attestation</label>
+                            <div class="rien">
+                                <input type="checkbox">
+                                <label for="attestation_scol">Attestation de scolarite</label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label for="carte" class="opac">Carte d'etudiant</label>
+                            <div class="rien">
+                                <input type="checkbox">
+                                <label for="carte">Original</label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label for="releve" class="opac">Releve des notes</label>
+                            <div class="rien">
+                                <input type="checkbox">
+                                <label for="releve">IIAP1</label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label for="attestation_reu" class="opac">Attestation de reussite</label>
+                            <div class="rien">
+                                <input type="checkbox">
+                                <label for="attestation_reu">IIAP1</label>
+                            </div>
+                        </div>
+                        <div class="doc_scan">
+                            <label for="scannes" class="opac">Documents scannes</label>
+                            <ul>
+                                <li>Baccalaureat</li>
+                                <li>D.E.U.G</li>
+                                <li>Licence</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit">Valider</button>
+                </form>
+
+                <label for="sous_titre">SUIVI DES DEMANDES</label>
+                <hr>
+
+                <div class="suivi">
+                    <div class="entete">
+                        <div class="active">
+                            <img src="graduation-cap.svg" alt="logo" width="20px">
+                            <label for="att_rel">Releve des notes / Attestation de reussite</label>
+                        </div>
+                        <div>
+                            <img src="graduation-cap.svg" alt="logo" width="20px">
+                            <label for="dip_carte">Diplome / Carte d'etudiant</label>
+                        </div>
+                        <div>
+                            <img src="graduation-cap.svg" alt="logo" width="20px">
+                            <label for="scol">Attestation de scolarite</label>
+                        </div>
+                    </div>
+
+                    <div class="tables">
+                        <table class="styled-table1 active">
+                            <thead>
+                                <tr>
+                                    <th>Date de demande</th>
+                                    <th>Type</th>
+                                    <th>Etape</th>
+                                    <th>Date de validation</th>
+                                    <th>Etat</th>
+                                    <th>Motif de refus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01-07-2025 16:30:14</td>
+                                    <td>Relevé de notes</td>
+                                    <td>IICS1</td>
+                                    <td>09/07/2025</td>
+                                    <td class="accorde">Accordé</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>05-09-2024 17:09:32</td>
+                                    <td>Relevé de notes</td>
+                                    <td>IIAP2</td>
+                                    <td>09/09/2024</td>
+                                    <td class="accorde">Accordé</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>05-09-2024 17:09:32</td>
+                                    <td>Att. de réussite</td>
+                                    <td>IIAP2</td>
+                                    <td>09/09/2024</td>
+                                    <td class="accorde">Accordé</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>29-08-2023 14:11:00</td>
+                                    <td>Att. de réussite</td>
+                                    <td>IIAP1</td>
+                                    <td>04/09/2023</td>
+                                    <td class="accorde">Accordé</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="styled-table1">
+                            <thead>
+                                <tr>
+                                    <th>Date de demande</th>
+                                    <th>Type</th>
+                                    <th>Valeur</th>
+                                    <th>Date de validation</th>
+                                    <th>Etat</th>
+                                    <th>Motif de refus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01-07-2025 16:30:14</td>
+                                    <td>Carte d'etudiant</td>
+                                    <td>Original</td>
+                                    <td></td>
+                                    <td><b>En cours de traitement</b></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="styled-table1">
+                            <thead>
+                                <tr>
+                                    <th>Date de demande</th>
+                                    <th>Date de validation</th>
+                                    <th>Etat</th>
+                                    <th>Motif de refus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01-07-2025 16:30:14</td>
+                                    <td>09/07/2025</td>
+                                    <td class="accorde">Accordé</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>05-09-2024 17:09:32</td>
+                                    <td>09/09/2024</td>
+                                    <td class="accorde">Accordé</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+
+</html>
+

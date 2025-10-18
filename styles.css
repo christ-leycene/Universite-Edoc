@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.site aside {
+    background-color: rgb(3, 77, 123);
+    height: 100vh;
+}
+/* === Overlay quand le menu est ouvert === */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* semi-transparent */
+    z-index: 900;
+}
+
+/* Quand aside est actif → on affiche l’overlay */
+aside.active ~ .overlay {
+    display: block;
+}
+
+
+aside .page {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border-bottom: 1px solid white;
+}
+
+.page img {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.page .nom_site {
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.site main {
+    background-color: rgb(240, 248, 255, .3);
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav img {
+    height: 20px;
+    width: 20px;
+}
+
+nav .bloc_nav {
+    padding: 0 10px;
+    margin-top: 5px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.notes_res .img_deplier {
+    margin-left: auto;
+    transition: .5s;
+}
+
+.img_deplier.deplie {
+    transform: rotate(-90deg);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+nav div.active,
+nav div:hover {
+    transition: .3s;
+    background-color: orangered;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main header {
+    background-color: #ff6632;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* === bouton hamburger === */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 10px; /* côté gauche comme aside */
+    z-index: 1100;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .entete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.entete .compte,
+.entete .langues {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.entete .compte{
+    padding: 0 5px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.compte img {
+    background-color: rgb(61, 140, 236);
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.compte .nom {
+    margin: 0 5px;
+}
+
+.entete .langues {
+    margin: 0 10px;
+}
+
+.langues a{
+    margin-right: 5px;
+    background-color: aliceblue;
+    width: 25px;
+    height: 25px;
+    align-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.langues a.active {
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(88, 90, 217);
+}
+
+.entete .langues:last-child {
+    margin-right: 0;
+}
+
+main article{
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+    margin: 25px;
+}
+
+article .identifiants {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.identifiants #nom {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+    padding-left: 10px;
+    background-color: white;
+    height: 50px;
+    align-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.identifiants .informations {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+}
+
+.informations img {
+    padding-top: 30px;
+    background-color: rgb(61, 140, 236);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.infos_complet div {
+    margin-bottom: 10px;
+}
+
+.informations .infos_perso {
+    margin-right: 20px;
+}
+
+.infos_complet .titre,
+.infos_perso .titre,
+.infos_inscription .titre{
+    font-weight: bold;
+}
+
+.infos_perso .fl,
+.infos_inscription .fl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos_perso div,
+.infos_inscription {
+    margin-bottom: 5px;
+}
+
+.fl div {
+    margin-bottom: 0;
+}
+
+.etapes {
+    margin-top: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid gray;
+}
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+/* === RESPONSIVE MODE === */
+@media (max-width: 1200px) {
+    .site {
+        display: block; /* on casse la grille pour que main prenne toute la largeur */
+    }
+
+    .site main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .site aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px; /* largeur fixe, raisonnable */
+        background-color: rgb(3, 77, 123);
+        transform: translateX(-100%); /* caché */
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    }
+
+    .site aside.active {
+        transform: translateX(0); /* affiché */
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .identifiants .informations {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    th, td {
+        font-size: 12px;
+        padding: 6px 4px;
+    }
+}
