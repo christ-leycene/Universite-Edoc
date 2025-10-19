@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dush University - Historique</title>
-    <link rel="stylesheet" href="style_res_ann.css">
+    <link rel="stylesheet" href="style_historique.css">
     <script src="main.js" defer></script>
 </head>
 <body>
     <div class="site">
+        <!-- Sidebar -->
         <aside>
             <div class="page">
                 <img src="graduation-cap.svg" alt="logo">
                 <div class="nom_site">E-DOC Dush University</div>
                 <img src="angle-left.svg" alt="sous-logo">
             </div>
-
             <nav>
                 <div class="bloc_nav">
                     <img src="home (1).svg" alt="Tableau de bord">
@@ -27,8 +27,8 @@
                 </div>
                 <div class="bloc_nav notes_res">
                     <img src="envelope.svg" alt="Notes et résultats">
-                    <a href="#">Historique des notes</a>
-                    <img src="angle-left.svg" alt="deplier" class="img_deplier">
+                    <a href="#">Notes et résultats</a>
+                    <img src="angle-left.svg" alt="déplier" class="img_deplier">
                 </div>
                 <div class="bloc_nav">
                     <img src="calendar-lines (1).svg" alt="Emploi du temps">
@@ -36,92 +36,181 @@
                 </div>
             </nav>
         </aside>
+
         <div class="overlay"></div>
+
+        <!-- Main Content -->
         <main>
             <header>
                 <div class="entete">
                     <button class="menu-btn" aria-label="Ouvrir le menu">☰</button>
                     <div class="compte">
-                        <img src="user.svg" alt="photo_profil">
+                        <img src="user.svg" alt="photo profil">
                         <div class="nom">DUSHIMIRIMANA CHRIST LEYCENE</div>
+                    </div>
+                    <div class="langues">
+                        <a href="#" class="active"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
                     </div>
                 </div>
             </header>
 
             <article>
-                <label for="affichage">HISTORIQUE DES NOTES</label>
+                <h2>Historique</h2>
                 <hr style="margin-bottom: 16px;">
 
-                <div class="tab">
+                <!-- Infos personnelles -->
+                <section class="infos">
+                    <div class="info_block">
+                        <img src="home (1).svg" alt="image">
+                        <div class="ss_infos">
+                            <div class="gras">DUSHIMIRIMANA CHRIST LEYCENE</div>
+                            <table>
+                                <tr><td>CIN :</td><td>OP0319616</td></tr>
+                                <tr><td>Téléphone :</td><td>0620587821</td></tr>
+                                <tr><td>Adresse :</td><td>-</td></tr>
+                            </table>
+                        </div>
+                    </div>
 
-                    <!-- IICS1 2024-2025 -->
-                    <table class="notes">
-                        <tr>
-                            <th class="violet">Intitulé</th>
-                            <th class="violet">Note / 20</th>
-                            <th class="violet">Points du jury</th>
-                            <th class="violet">Résultat</th>
-                            <th class="violet">Session</th>
-                            <th class="violet">Année universitaire</th>
-                        </tr>
+                    <div class="info_block">
+                        <img src="home (1).svg" alt="image">
+                        <div class="ss_infos">
+                            <div class="gras">Informations Personnelles</div>
+                            <table>
+                                <tr><td>Nom et Prénom :</td><td>DUSHIMIRIMANA CHRIST LEYCENE</td></tr>
+                                <tr><td>Lieu de Naissance :</td><td>BWIZA, BURUNDI</td></tr>
+                                <tr><td>Code MASSAR :</td><td>2300000098</td></tr>
+                                <tr><td>Date de Naissance :</td><td>16/04/2003</td></tr>
+                            </table>
+                        </div>
+                    </div>
 
-                        <tr><td class="module">IICS1 - Semestre 1</td><td colspan="5"></td></tr>
-                        <tr><td>Mathematics for eng 1</td><td>15</td><td></td><td>V</td><td>1</td><td>2024/2025</td></tr>
-                        <tr><td>Optimisation</td><td>19.5</td><td></td><td>V</td><td>1</td><td>2024/2025</td></tr>
-                        <tr><td>Statistics</td><td>13</td><td></td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                    <div class="info_block">
+                        <img src="home (1).svg" alt="image">
+                        <div class="ss_infos">
+                            <div class="gras">Informations d'Inscription</div>
+                            <table>
+                                <tr><td>Administrative :</td><td>2024/2025</td></tr>
+                                <tr><td>Pédagogique :</td><td>2024/2025</td></tr>
+                                <tr><td>Etape :</td><td>IICS1</td></tr>
+                                <tr><td>Code Apogée :</td><td>22016306</td></tr>
+                                <tr><td>Groupe :</td><td>IICS1</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
 
-                        <tr><td class="module">Electronic and Computer Architecture</td><td colspan="5"></td></tr>
-                        <tr><td>Digital electronic</td><td>11</td><td></td><td>NV</td><td>1</td><td>2024/2025</td></tr>
-                        <tr><td>Computer architecture</td><td>11.17</td><td></td><td>NV</td><td>1</td><td>2024/2025</td></tr>
+                <!-- Historique des notes -->
+                <section class="hist">
+                    <!-- IIAP1, 2022 -->
+                    <div class="test">
+                        <button class="tab-btn" data-target="tab1">IIAP1,2022</button>
+                        <div id="tab1" class="tab">
+                            <table class="notes">
+                                <thead>
+                                    <tr>
+                                        <th>Intitulé</th>
+                                        <th>Note / 20</th>
+                                        <th>Points du jury</th>
+                                        <th>Résultat</th>
+                                        <th>Session</th>
+                                        <th>Année universitaire</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="semestre"><td>Semestre 1</td><td colspan="5"></td></tr>
+                                    <tr class="module"><td>Mathematics for eng 1</td><td colspan="5"></td></tr>
+                                    <tr><td>Optimisation</td><td>14.5</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Statistics</td><td>13</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
 
-                        <tr><td class="module">Databases and Web</td><td colspan="5"></td></tr>
-                        <tr><td>Databases</td><td>14.25</td><td></td><td>V</td><td>1</td><td>2024/2025</td></tr>
-                        <tr><td>Web</td><td>20</td><td></td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr class="module"><td>Electronic and Computer Architecture</td><td colspan="5"></td></tr>
+                                    <tr><td>Digital electronic</td><td>11</td><td>-</td><td>NV</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Computer architecture</td><td>12.53</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
 
-                        <tr><td class="module">OOP</td><td colspan="5"></td></tr>
-                        <tr><td>UML</td><td>9</td><td></td><td>NV</td><td>1</td><td>2024/2025</td></tr>
-                        <tr><td>Python language</td><td>17.5</td><td></td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr class="module"><td>Databases and Web</td><td colspan="5"></td></tr>
+                                    <tr><td>Databases</td><td>11.5</td><td>-</td><td>NV</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Web</td><td>12.5</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
 
-                        <tr class="recap"><td>IICS1</td><td>15.246</td><td></td><td>ADM</td><td>1</td><td>2024/2025</td></tr>
-                    </table>
+                                    <tr class="module"><td>OOP</td><td colspan="5"></td></tr>
+                                    <tr><td>UML</td><td>14</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Python language</td><td>14</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
 
-                    <!-- AP2 2023-2024 -->
-                    <table class="notes">
-                        <tr>
-                            <th class="violet">Intitulé</th>
-                            <th class="violet">Note / 20</th>
-                            <th class="violet">Points du jury</th>
-                            <th class="violet">Résultat</th>
-                            <th class="violet">Session</th>
-                            <th class="violet">Année universitaire</th>
-                        </tr>
-                        <tr><td class="module">AP2 - Semestre 1</td><td colspan="5"></td></tr>
-                        <tr><td>Mathematics 2</td><td>14.7</td><td></td><td>V</td><td>1</td><td>2023/2024</td></tr>
-                        <tr><td>Physics 2</td><td>12.8</td><td></td><td>V</td><td>1</td><td>2023/2024</td></tr>
-                        <tr><td>Data Structures</td><td>15</td><td></td><td>V</td><td>1</td><td>2023/2024</td></tr>
-                        <tr><td>Electronics 2</td><td>13.5</td><td></td><td>V</td><td>1</td><td>2023/2024</td></tr>
-                        <tr class="recap"><td>AP2</td><td>14.5</td><td></td><td>ADM</td><td>1</td><td>2023/2024</td></tr>
-                    </table>
+                                    <tr class="module"><td>Network 1</td><td colspan="5"></td></tr>
+                                    <tr><td>Network Protocols</td><td>12.975</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Introduction to Networks</td><td>11</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
 
-                    <!-- AP1 2022-2023 -->
-                    <table class="notes">
-                        <tr>
-                            <th class="violet">Intitulé</th>
-                            <th class="violet">Note / 20</th>
-                            <th class="violet">Points du jury</th>
-                            <th class="violet">Résultat</th>
-                            <th class="violet">Session</th>
-                            <th class="violet">Année universitaire</th>
-                        </tr>
-                        <tr><td class="module">AP1 - Semestre 1</td><td colspan="5"></td></tr>
-                        <tr><td>Mathematics 1</td><td>12.5</td><td></td><td>V</td><td>1</td><td>2022/2023</td></tr>
-                        <tr><td>Physics 1</td><td>14.2</td><td></td><td>V</td><td>1</td><td>2022/2023</td></tr>
-                        <tr><td>Computer Programming</td><td>13.7</td><td></td><td>V</td><td>1</td><td>2022/2023</td></tr>
-                        <tr><td>Electronics 1</td><td>11.8</td><td></td><td>NV</td><td>1</td><td>2022/2023</td></tr>
-                        <tr class="recap"><td>AP1</td><td>13.5</td><td></td><td>ADM</td><td>1</td><td>2022/2023</td></tr>
-                    </table>
+                                    <tr class="module"><td>Langues</td><td colspan="5"></td></tr>
+                                    <tr><td>Anglais</td><td>16</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Espagnol</td><td>15</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
 
-                </div>
+                                    <tr class="module"><td>Historique des sciences et Arts</td><td colspan="5"></td></tr>
+                                    <tr><td>Historique des sciences</td><td>12.5</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Arts</td><td>14</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+
+                                    <tr class="semestre"><td>Semestre 2</td><td colspan="5"></td></tr>
+                                    <tr class="module"><td>Network 2</td><td colspan="5"></td></tr>
+                                    <tr><td>Advanced network</td><td>13.2</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Network administration</td><td>11.86</td><td>-</td><td>NV</td><td>1</td><td>2024/2025</td></tr>
+
+                                    <tr class="module"><td>Fundamentals of Cybersecurity</td><td colspan="5"></td></tr>
+                                    <tr><td>Cybersecurity threats</td><td>13</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                    <tr><td>Information system security</td><td>11</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+
+                                    <tr class="module"><td>Mobile Development</td><td colspan="5"></td></tr>
+                                    <tr><td>Android - iOS</td><td>14</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+
+                                    <tr class="module"><td>Cloud Computing</td><td colspan="5"></td></tr>
+                                    <tr><td>Introduction to Cloud</td><td>12</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+
+                                    <tr class="module"><td>Projet</td><td colspan="5"></td></tr>
+                                    <tr><td>Final Project</td><td>15</td><td>-</td><td>V</td><td>1</td><td>2024/2025</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- IIAP2, 2023 -->
+                    <div class="test">
+                        <button class="tab-btn" data-target="tab2">IIAP2,2023</button>
+                        <div id="tab2" class="tab">
+                            <table class="notes">
+                                <thead>
+                                    <tr>
+                                        <th>Intitulé</th>
+                                        <th>Note / 20</th>
+                                        <th>Points du jury</th>
+                                        <th>Résultat</th>
+                                        <th>Session</th>
+                                        <th>Année universitaire</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="semestre"><td>Semestre 1</td><td colspan="5"></td></tr>
+                                    <tr class="module"><td>Advanced Databases</td><td colspan="5"></td></tr>
+                                    <tr><td>SQL & NoSQL</td><td>14</td><td>-</td><td>V</td><td>1</td><td>2025/2026</td></tr>
+                                    <tr><td>Data Warehousing</td><td>12</td><td>-</td><td>V</td><td>1</td><td>2025/2026</td></tr>
+
+                                    <tr class="module"><td>Software Engineering</td><td colspan="5"></td></tr>
+                                    <tr><td>Agile Methodologies</td><td>13</td><td>-</td><td>V</td><td>1</td><td>2025/2026</td></tr>
+                                    <tr><td>Design Patterns</td><td>14</td><td>-</td><td>V</td><td>1</td><td>2025/2026</td></tr>
+
+                                    <tr class="semestre"><td>Semestre 2</td><td colspan="5"></td></tr>
+                                    <tr class="module"><td>Machine Learning</td><td colspan="5"></td></tr>
+                                    <tr><td>Supervised Learning</td><td>13</td><td>-</td><td>V</td><td>2</td><td>2025/2026</td></tr>
+                                    <tr><td>Unsupervised Learning</td><td>12</td><td>-</td><td>V</td><td>2</td><td>2025/2026</td></tr>
+
+                                    <tr class="module"><td>DevOps & Cloud</td><td colspan="5"></td></tr>
+                                    <tr><td>CI/CD</td><td>14</td><td>-</td><td>V</td><td>2</td><td>2025/2026</td></tr>
+                                    <tr><td>Cloud Services</td><td>13</td><td>-</td><td>V</td><td>2</td><td>2025/2026</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </section>
             </article>
         </main>
     </div>
